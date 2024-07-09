@@ -423,7 +423,7 @@
                     "name": "current",
                     "dependsOn": [
                         "[concat('Microsoft.App/containerapps/', parameters('containerAppName'))]",
-                        "[concat('Microsoft.Authorization/roleAssignments/', parameters('oidcRbacNameToResourceGroup'))]",
+                        "[concat('Microsoft.Authorization/roleAssignments/', parameters('oidcRbacNameToResourceGroup'))]"
                     ],
                     "properties": {
                         "repoUrl": "[parameters('repoUrl')]",
