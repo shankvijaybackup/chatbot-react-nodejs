@@ -59,8 +59,7 @@ export const ChatControl = (props: ChatControlProps) => {
                         className="form-control"
                         value={message}
                         onChange={m => setMessage(m.target.value)}
-                        onKeyDown={onKeyPress}
-                        placeholder="e.g. Please suggest some activities based on my location and the weather."></input>
+                        onKeyDown={onKeyPress}></input>
                 </div>
                 <div className='col-sm-1'>
                     <button className="btn btn-primary" onClick={onClick}>Send</button>

@@ -53,15 +53,16 @@ export const ChatCard = (props: SystemChatCardProps) => {
                     </ol>
                     <p className="card-text">Once you have your API key, you'll need to add it to your app as an environment variable:</p>
                     <ul>
-                        <li><b>For local development:</b>Add a .env file to the root of your server directory with a key of OPENAI_API_KEY, and a value of your Open AI API Key</li>
-                        <li><b>For your App Space in Azure:</b>
+                        <li>
+                            <b>How to add your API key to your App Space in Azure:</b>
                             <ol>
                                 <li>Open the Azure Portal and navigate to your App Space</li>
-                                <li>Click on your backend App Clomponent and navigate to the "Settings" tab</li>
+                                <li>Click on your backend App Component and navigate to the "Settings" tab</li>
                                 <li>Add a new secret with a key of "openaisecret", paste the value of your open AI key that you generated earlier, and save.</li>
                                 <li>Add an environment with the key name of OPENAI_API_KEY, and a value which references the secret named "openaisecret"</li>
                             </ol>
                         </li>
+                        <li><b>How to add your API key for local development:</b>Add a .env file to the root of your server directory with a key of OPENAI_API_KEY, and a value of your Open AI API Key</li>
                     </ul>
                 </div>
             </div>

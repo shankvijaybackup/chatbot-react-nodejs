@@ -23,6 +23,11 @@ function App() {
     const init = async () => {
       const initialChatMessages: ChatMessage[] = []
 
+      setChatMessages([{
+        isLoading: true,
+        role: 'localAssistant'
+      }]);
+
       const response = await pingServer();
       if (!response.ok) {
         let body: any = null;
@@ -56,7 +61,7 @@ function App() {
           },
           {
             isLoading: false,
-            content: `Hi! I'm a bot that specializes in suggesting activies based on your location and the weather.  How can I help you?`,
+            content: `Hi! I'm an agent that specializes in suggesting local activities for you.  How can I help you?  You can say things like "please suggest some activities based on my location and weather"`,
             role: 'localAssistant'
           });
       }
